@@ -1,0 +1,54 @@
+package Loja;
+
+public class Sofá {
+	
+	
+	private String marca;
+	private String modelo;
+	private String cor;
+	private float preco;
+	
+	public Sofas(
+			String marca,
+			String modelo,
+			String cor,
+	    
+	        
+	       ) 
+	{
+		this.modelo=modelo;
+		this.cor=cor;
+		this.marca=marca;
+		
+	}
+	
+	public float get_preco() {
+		return preco;
+	}
+	
+	public void set_preco( float novopreco) {
+		preco=novopreco;
+	}
+	
+	public void sentar() {
+		System.out.println("Sentando no sofá");
+	}
+	
+	}
+	public void deitar() {
+		System.out.println("Estou deitado agora");
+	}
+	public static void main(String[] args) {
+		
+		Sofas C1 = new Sofa("Verona", "retratil", "marrom",1699.00);
+		Sofas C2 = new Sofa ("Egito","reclinavel","Branco",542.79);
+		
+
+		C1.deitar();
+		C1.sentar();
+		
+		C2.sentar();
+		C2.deiitar();
+
+}
+}
